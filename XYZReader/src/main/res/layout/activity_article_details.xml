@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="@dimen/elevation_appbar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/details_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:transitionName="@string/transition_image"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/photo"
+                    tools:targetApi="lollipop" />
+
+                <LinearLayout
+                    android:id="@+id/details_meta_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="#333"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/details_title"
+                        style="?android:attr/textAppearanceLarge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:lineSpacingMultiplier="0.9"
+                        android:paddingBottom="8dp"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/detail_title_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/details_subtitle"
+                        style="?android:attr/textAppearanceSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#8fff" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/details_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="24dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/details_share_fab"
+        android:layout_width="@dimen/width_fab"
+        android:layout_height="@dimen/height_fab"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/margin_fab"
+        android:layout_marginEnd="@dimen/margin_fab"
+        android:contentDescription="@string/action_share"
+        android:src="@drawable/ic_share"
+        app:elevation="@dimen/elevation_fab"
+        app:fabSize="normal" />
+
+</android.support.design.widget.CoordinatorLayout>

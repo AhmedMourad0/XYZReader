@@ -1,0 +1,5 @@
+<resources>
+    <!-- detail -->
+    <dimen name="detail_title_text_size">42sp</dimen>
+    <dimen name="margin_fab">24dp</dimen>
+</resources>
