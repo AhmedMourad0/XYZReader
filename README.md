@@ -3,7 +3,7 @@
 ## Project Overview
 This's a project for the Android Developer Nanodegree Program.
 
-This project is incomplete and was rushed due to deadlines and will be fixed soon.
+This project is incomplete and was rushed due to deadlines (probably won't be fixed).
 
 ## Screenshots
 
