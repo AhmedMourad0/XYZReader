@@ -7,6 +7,7 @@ An article reader
 - Handling the rendering of very long text
 - SQLiteDatabase, ContentProviders, CursorLoaders, IntentServices
 - Ui and Animation tricks
+- ButterKnife, Picasso, OkHttp, RxJava, Volley
 
 ## Screenshots
 
